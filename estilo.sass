@@ -1,0 +1,262 @@
+$gray: #F2F2F2
+$gray-focus: #d2d2d2
+$white: #fff
+
+
+@mixin container
+    display: grid
+    grid-template-columns: 1fr 1fr
+    margin-top: 20rem
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 62.5%
+
+body
+    font-size: 2rem
+    background-color: $white
+    font-family: gilroy
+
+p
+    max-width: 581px
+
+header
+    display: flex
+    justify-content: space-between
+    margin-top: 1rem
+
+
+.section-leveza
+    max-width: 1400 px
+    margin: 0 auto
+
+.nav-initial
+    align-items: center
+    max-width: 1400px
+    margin: 0 auto
+    margin-top: 4rem
+    &-list
+        font-size: 2.8rem
+        list-style: none
+        display: flex
+    &-list__item
+        padding: 2.1rem
+
+    &-input__div
+        display: flex
+        align-items: center
+
+    &-input
+        padding: 1.5rem 0rem
+        text-align: center
+        font-size: 2rem
+        border-radius: 5rem
+        background-color: $gray
+        &__lupa
+            position: relative
+            right: 22rem
+
+.first-section
+    display: flex
+    align-items: center
+    justify-content: space-between
+    max-width: 1400px
+    margin: 0 auto
+    margin-top: 8rem
+    margin-bottom: 20rem
+
+    &__title
+        font-size: 10.4rem
+        font-weight: 700
+        background: -webkit-linear-gradient(180deg,#dadada, #9f9f9f)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
+    &__images
+        background: linear-gradient(270deg, rgba(218,218,218,1) 0%, rgba(159,159,159,1) 100%)
+        border-radius: 50%
+        max-width: 581px
+        min-height: 581px
+        padding-bottom: 3px
+
+    &__tenis
+        position: relative
+        right: 25rem
+    &__text
+        max-width: 475px
+        margin-top: 2.4rem
+    &__button
+        padding: 2.5rem 4rem
+        border-radius: 12px
+        font-size: 2rem
+        font-weight: 700
+        margin-top: 10.8rem
+        &:hover
+            background-color: $gray
+            border-color: #f3f3f3
+
+        &:focus
+            background-color: $gray-focus
+            border-color: #f3f3f3
+
+    .font
+        font-size: 2.5rem
+
+.section-colors
+    background-color: #f3f3f3
+    border-radius: 8px
+    display: flex
+    justify-content: center
+    max-width: 1440px
+    margin: 0 auto
+    padding: 6.4rem
+    text-align: center
+    &__container>h2
+        font-size: 4rem
+        margin-bottom: 6.4rem
+    &__list
+        display: flex
+        justify-content: center
+        list-style: none
+    &__item
+        padding: 0 1rem
+
+    &__colors
+        font-size: 2rem
+
+.button-aside
+    margin-top: 6.4rem
+
+.section-leveza
+    display: grid
+    grid-template-columns: 1fr 1fr
+    margin-top: 20rem
+    max-width: 1400px
+
+    &__title
+        font-size: 6.4rem
+        font-weight: 700
+        background: -webkit-linear-gradient(180deg,#dadada, #9f9f9f)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        margin-bottom: 5.6rem
+    &__text
+        font-size: 2rem
+        line-height: 2.8rem
+        max-width: 581px
+        font-weight: 400
+    &__img
+        background-image: url("./img/Leveza e agilidade.png")
+        background-position: right
+        background-size: cover
+        background-repeat: no-repeat
+        height: 600px
+
+.section-leveza__box2
+    background-image: url("./img/Sensação de estabilização.png")
+    background-position: right
+    background-size: cover
+    background-repeat: no-repeat
+    height: 600px
+
+.section-damping
+    background-position: right
+    background-repeat: no-repeat
+    background-size: cover
+    display: grid
+    grid-template-columns: 1fr 41%
+    margin: 0 auto
+    height: 600px
+    margin-top: 20rem
+    max-width: 1400px
+
+    &__text
+        line-height: 2.8rem
+
+.pista
+    background-image: url("/img/pista.png")
+    background-repeat: no-repeat
+    background-size: cover
+    height: 720px
+    color: $white
+    font-size: 10.4rem
+    font-weight: 700
+    padding: 2.4rem 6%
+    margin: 20rem 0
+
+    &-icon
+        margin-bottom: 12px
+
+.section-form
+    display: flex
+    max-width: 1440px
+    margin: 0 auto
+    border-radius: 8px 0px 0px 8px
+    background-color: $gray
+    height: 838px
+    &__map
+        background-image: url("/img/mapa.png")
+        background-repeat: no-repeat
+        width: 60%
+    &__box
+        width: 36%
+        padding-top: 2rem
+    &__enter
+        display: flex
+        flex-direction: column
+
+    &__title
+        margin: 2rem 0
+        font-size: 4rem
+    &__input
+        padding: 3rem
+        font-size: 2rem
+        border-radius: 12px
+        border: none
+        margin: 2rem 0
+    &__inputcom
+        font-family: gilroy
+
+.input-check
+    transform: scale(1.5)
+    margin-right: 2rem
+.section-form__check
+    align-items: center
+    color: #969696
+
+.button-form
+    border: 2px solid #000
+    cursor: pointer    
+    font-weight: 700
+
+.footer   
+    background-color: $gray
+    
+    &-box
+        display: flex
+        justify-content: space-around
+        margin-top: 16rem
+        padding-top: 5.6rem
+    &-list, &-sociais
+        list-style: none 
+        &__item
+            margin-bottom: 12px   
+        &__paragraf
+            margin-bottom: 1.6rem 
+            font-weight: 500               
+    &-sociais__links
+        display: flex    
+
+    &-logo
+        display: flex
+        justify-content: center   
+        align-items: center
+        padding-top: 5.6rem    
+
+    &-icons
+        margin-right: 1rem          
+
