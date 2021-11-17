@@ -2,7 +2,6 @@ $gray: #F2F2F2
 $gray-focus: #d2d2d2
 $white: #fff
 
-
 @mixin container
     display: grid
     grid-template-columns: 1fr 1fr
@@ -28,7 +27,6 @@ header
     display: flex
     justify-content: space-between
     margin-top: 1rem
-
 
 .section-leveza
     max-width: 1400 px
@@ -181,23 +179,31 @@ header
     background-image: url("/img/pista.png")
     background-repeat: no-repeat
     background-size: cover
-    height: 720px
     color: $white
+    display: flex
     font-size: 10.4rem
     font-weight: 700
-    padding: 2.4rem 6%
+    height: 720px
+    justify-content: center
     margin: 20rem 0
+    padding: 2.4rem 6%
 
     &-icon
         margin-bottom: 12px
+    &-arrow
+        position: relative
+        right: 11rem
+    &-text
+        position: relative
+        right: 16rem
 
 .section-form
-    display: flex
-    max-width: 1440px
-    margin: 0 auto
-    border-radius: 8px 0px 0px 8px
     background-color: $gray
+    border-radius: 8px 0px 0px 8px
+    display: flex
     height: 838px
+    margin: 0 auto
+    max-width: 1440px
     &__map
         background-image: url("/img/mapa.png")
         background-repeat: no-repeat
@@ -213,11 +219,11 @@ header
         margin: 2rem 0
         font-size: 4rem
     &__input
-        padding: 3rem
-        font-size: 2rem
         border-radius: 12px
         border: none
+        font-size: 2rem
         margin: 2rem 0
+        padding: 3rem
     &__inputcom
         font-family: gilroy
 
@@ -230,33 +236,36 @@ header
 
 .button-form
     border: 2px solid #000
-    cursor: pointer    
+    cursor: pointer
     font-weight: 700
 
-.footer   
+.footer
     background-color: $gray
-    
+
     &-box
         display: flex
         justify-content: space-around
         margin-top: 16rem
         padding-top: 5.6rem
     &-list, &-sociais
-        list-style: none 
+        list-style: none
         &__item
-            margin-bottom: 12px   
+            margin-bottom: 12px
         &__paragraf
-            margin-bottom: 1.6rem 
-            font-weight: 500               
+            margin-bottom: 1.6rem
+            font-weight: 500
     &-sociais__links
-        display: flex    
+        display: flex
 
     &-logo
         display: flex
-        justify-content: center   
+        justify-content: center
         align-items: center
-        padding-top: 5.6rem    
+        padding-top: 5.6rem
 
     &-icons
-        margin-right: 1rem          
+        margin-right: 1rem
 
+    &-principal
+        max-width: 1440px
+        margin: 0 auto        

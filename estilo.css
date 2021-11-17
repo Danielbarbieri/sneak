@@ -248,27 +248,43 @@ header {
   background-image: url("/img/pista.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 720px;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 10.4rem;
   font-weight: 700;
-  padding: 2.4rem 6%;
+  height: 720px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 20rem 0;
+  padding: 2.4rem 6%;
 }
 
 .pista-icon {
   margin-bottom: 12px;
 }
 
+.pista-arrow {
+  position: relative;
+  right: 11rem;
+}
+
+.pista-text {
+  position: relative;
+  right: 16rem;
+}
+
 .section-form {
+  background-color: #F2F2F2;
+  border-radius: 8px 0px 0px 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1440px;
-  margin: 0 auto;
-  border-radius: 8px 0px 0px 8px;
-  background-color: #F2F2F2;
   height: 838px;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .section-form__map {
@@ -298,11 +314,11 @@ header {
 }
 
 .section-form__input {
-  padding: 3rem;
-  font-size: 2rem;
   border-radius: 12px;
   border: none;
+  font-size: 2rem;
   margin: 2rem 0;
+  padding: 3rem;
 }
 
 .section-form__inputcom {
@@ -376,5 +392,10 @@ header {
 
 .footer-icons {
   margin-right: 1rem;
+}
+
+.footer-principal {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=estilo.css.map */
