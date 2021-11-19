@@ -79,11 +79,18 @@ header
         border-radius: 50%
         max-width: 581px
         min-height: 581px
+
         padding-bottom: 3px
 
+        &:hover
+            position: relative
+            right: 10rem
     &__tenis
         position: relative
         right: 25rem
+
+        &:hover
+            right: 5rem
     &__text
         max-width: 475px
         margin-top: 2.4rem
@@ -93,13 +100,12 @@ header
         font-size: 2rem
         font-weight: 700
         margin-top: 10.8rem
+        background-color: #fff
         &:hover
             background-color: $gray
-            border-color: #f3f3f3
 
         &:focus
             background-color: $gray-focus
-            border-color: #f3f3f3
 
     .font
         font-size: 2.5rem
@@ -239,6 +245,14 @@ header
     cursor: pointer
     font-weight: 700
 
+    &:hover
+        background-color: $gray
+        border: none
+
+    &:focus
+        background-color: $gray-focus
+        border: none
+
 .footer
     background-color: $gray
 
@@ -268,4 +282,4 @@ header
 
     &-principal
         max-width: 1440px
-        margin: 0 auto        
+        margin: 0 auto

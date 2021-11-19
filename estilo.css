@@ -111,9 +111,18 @@ header {
   padding-bottom: 3px;
 }
 
+.first-section__images:hover {
+  position: relative;
+  right: 10rem;
+}
+
 .first-section__tenis {
   position: relative;
   right: 25rem;
+}
+
+.first-section__tenis:hover {
+  right: 5rem;
 }
 
 .first-section__text {
@@ -127,16 +136,15 @@ header {
   font-size: 2rem;
   font-weight: 700;
   margin-top: 10.8rem;
+  background-color: #fff;
 }
 
 .first-section__button:hover {
   background-color: #F2F2F2;
-  border-color: #f3f3f3;
 }
 
 .first-section__button:focus {
   background-color: #d2d2d2;
-  border-color: #f3f3f3;
 }
 
 .first-section .font {
@@ -342,6 +350,16 @@ header {
   border: 2px solid #000;
   cursor: pointer;
   font-weight: 700;
+}
+
+.button-form:hover {
+  background-color: #F2F2F2;
+  border: none;
+}
+
+.button-form:focus {
+  background-color: #d2d2d2;
+  border: none;
 }
 
 .footer {
