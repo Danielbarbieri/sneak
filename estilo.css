@@ -109,6 +109,7 @@ header {
   max-width: 581px;
   min-height: 581px;
   padding-bottom: 3px;
+  cursor: pointer;
 }
 
 .first-section__images:hover {
