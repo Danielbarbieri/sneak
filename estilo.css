@@ -103,23 +103,41 @@ header {
 }
 
 .first-section__images {
-  background: -webkit-gradient(linear, right top, left top, from(#dadada), to(#9f9f9f));
-  background: linear-gradient(270deg, #dadada 0%, #9f9f9f 100%);
-  border-radius: 50%;
   max-width: 581px;
   min-height: 581px;
   padding-bottom: 3px;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: relative;
 }
 
 .first-section__images:hover {
-  position: relative;
+  right: 10rem;
+}
+
+.first-section__images-bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, right top, left top, from(#dadada), to(#9f9f9f));
+  background: linear-gradient(270deg, #dadada 0%, #9f9f9f 100%);
+}
+
+.first-section__images:hover {
   right: 10rem;
 }
 
 .first-section__tenis {
   position: relative;
   right: 25rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .first-section__tenis:hover {
